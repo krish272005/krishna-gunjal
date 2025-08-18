@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of krishna gunjal — Web Developer & Designer">
+  <meta name="keywords" content="portfolio, web developer, frontend, css, html, javascript">
+  <title>krishna gunjal — Web Developer & Designer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 id="home">krishna gunjal</h1>
+        <p class="subtitle">Web Developer & Designer</p>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="theme-toggle" aria-pressed="false" title="Toggle theme">dark mode</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="container about-section">
+      <h2>About Me</h2>
+      <div class="about-flex">
+        <figure>
+          <img src="images/myphoto.jpg" alt="Profile picture of krishna gunjal" width="300" height="300">
+          <figcaption>krishna gunjal — Developer</figcaption>
+        </figure>
+        <article class="about-text">
+          <h3>Introduction</h3>
+          <p><strong>Hello!</strong> I'm krishna, a freelance web developer specializing in clean, responsive interfaces. I enjoy turning designs into accessible, maintainable websites.</p>
+          <p><em>My approach</em> is user-centred design, performance-minded implementation, and careful testing. I write semantic HTML and scalable CSS.</p>
+          <p><mark>Currently</mark> I work on front-end features, small full-stack apps, and freelancing projects that need quick turnarounds.</p>
+          <p><a href="https://example.com/resume.pdf" target="_blank" rel="noopener noreferrer">View my resume (opens in new tab)</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container skills-section">
+      <h2>Skills</h2>
+
+      <div class="skills-lists">
+        <div class="skill-block">
+          <h3>Technical Skills (unordered)</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3 (Flexbox, Grid)</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+
+        <div class="skill-block">
+          <h3>Development Process (ordered)</h3>
+          <ol>
+            <li>Requirement & research</li>
+            <li>Wireframes & design</li>
+            <li>Implementation</li>
+            <li>Testing & deployment</li>
+          </ol>
+        </div>
+
+        <div class="skill-block nested-skills">
+          <h3>Skills (nested)</h3>
+          <ul>
+            <li>Frontend
+              <ul>
+                <li>HTML & Semantics</li>
+                <li>CSS — Flexbox & Grid</li>
+                <li>JavaScript — DOM, Fetch API</li>
+              </ul>
+            </li>
+            <li>Backend
+              <ul>
+                <li>Node.js (Express)</li>
+                <li>Databases — MongoDB / SQLite</li>
+                <li>REST API design</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Skills cards (Flexbox grid) -->
+      <div class="skills-cards">
+        <article class="skill-card">HTML</article>
+        <article class="skill-card">CSS</article>
+        <article class="skill-card">JavaScript</article>
+        <article class="skill-card">Responsive Design</article>
+        <article class="skill-card">Version Control</article>
+        <article class="skill-card">Testing</article>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container projects-section">
+      <h2>Projects</h2>
+
+      <table class="projects-table">
+        <caption>Selected Projects</caption>
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Technology Used</th>
+            <th>Completion Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Portfolio Website</td>
+            <td>HTML, CSS, JS</td>
+            <td>2025-08-10</td>
+            <td>Live</td>
+          </tr>
+          <tr>
+            <td>Task Manager App</td>
+            <td>React, Node.js</td>
+            <td>2025-05-20</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>Shop Landing Page</td>
+            <td>HTML, CSS, Bootstrap</td>
+            <td>2024-12-15</td>
+            <td>Live</td>
+          </tr>
+          <tr>
+            <td>IoT Plant Monitor</td>
+            <td>ESP32, Flask</td>
+            <td>2025-02-02</td>
+            <td>Prototype</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="project-media">
+        <h3>Project Demo</h3>
+        <!-- Embedded video (use your local or hosted file) -->
+        <video controls width="640" height="360">
+          <source src="videos/project demo.mp4" type="video/mp4">
+        </video>
+
+        <!-- Responsive screenshots -->
+      <div class="project-images">
+        <h3>Project Screenshots</h3>
+  <img src="images/ss1.png" alt="Screenshot 1" width="400" height="250">
+  <img src="images/ss2.png" alt="Screenshot 2" width="400" height="250">
+</div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container contact-section">
+      <h2>Contact</h2>
+      <form action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <label for="fullname">Full Name *</label>
+          <input id="fullname" name="fullname" type="text" required placeholder="Your full name">
+
+          <label for="email">Email Address *</label>
+          <input id="email" name="email" type="email" required placeholder="name@example.com">
+
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" placeholder="+91-XXXXXXXXXX">
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Project Details</legend>
+
+          <label for="projectType">Project Type</label>
+          <select id="projectType" name="projectType">
+            <option>Web Design</option>
+            <option>Web Development</option>
+            <option>SEO</option>
+            <option>Other</option>
+          </select>
+
+          <p>Budget Range:</p>
+          <label><input type="radio" name="budget" value="500-1000"> $500-1000</label>
+          <label><input type="radio" name="budget" value="1000-5000"> $1000-5000</label>
+          <label><input type="radio" name="budget" value="5000+"> $5000+</label>
+
+          <p>Services (select all that apply):</p>
+          <label><input type="checkbox" name="services" value="design"> Design</label>
+          <label><input type="checkbox" name="services" value="development"> Development</label>
+          <label><input type="checkbox" name="services" value="seo"> SEO</label>
+
+          <label for="description">Project Description</label>
+          <textarea id="description" name="description" placeholder="Describe your project..." required></textarea>
+
+          <label for="timeline">Project Timeline (months)</label>
+          <input id="timeline" name="timeline" type="range" min="1" max="12" value="3">
+
+          <label for="startDate">Preferred Start Date</label>
+          <input id="startDate" name="startDate" type="date">
+
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 krishna gunjal. All rights reserved.</p>
+      <p><a href="#">Back to top</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple theme toggle (uses data-theme attribute on html)
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      html.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+      toggle.setAttribute('aria-pressed', html.getAttribute('data-theme') === 'dark');
+    });
+  </script>
+</body>
+</html>
