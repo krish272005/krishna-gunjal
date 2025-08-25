@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skills — Krishna Gunjal</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<script>
+  AOS.init({
+    duration: 1000, // animation speed
+    once: true      // only animate once
+  });
+</script>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>krishna gunjal</h1>
+        <p class="subtitle">Web Developer & Designer</p>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html" class="active">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-pressed="false">dark mode</button>
+    </div>
+  </header>
+
+<main class="container">
+  <h1>My Skills</h1>
+
+  <div class="skill" data-aos="fade-right">
+    <p>HTML</p>
+    <div class="progress">
+      <div class="progress-bar" style="width: 90%;">90%</div>
+    </div>
+  </div>
+
+  <div class="skill" data-aos="fade-left">
+    <p>CSS</p>
+    <div class="progress">
+      <div class="progress-bar" style="width: 80%;">80%</div>
+    </div>
+  </div>
+
+  <div class="skill" data-aos="fade-right">
+    <p>JavaScript</p>
+    <div class="progress">
+      <div class="progress-bar" style="width: 70%;">70%</div>
+    </div>
+  </div>
+
+  <div class="skill" data-aos="fade-left">
+    <p>Python</p>
+    <div class="progress">
+      <div class="progress-bar" style="width: 75%;">75%</div>
+    </div>
+  </div>
+</main>
+
+<section id="skills">
+  <div class="skills-container"> 
+    <div class="skill-card">
+      <img src="icons/html.jpg" alt="HTML Logo">
+      <h3>HTML</h3>
+      <p>90%</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="icons/css.png" alt="CSS Logo">
+      <h3>CSS</h3>
+      <p>80%</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="icons/js.png" alt="JavaScript Logo">
+      <h3>JavaScript</h3>
+      <p>70%</p>
+    </div>
+
+    <div class="skill-card">
+      <img src="icons/python.webp" alt="Python Logo">
+      <h3>Python</h3>
+      <p>75%</p>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Krishna Gunjal. All rights reserved.</p>
+  </footer>
+</body>
+</html>

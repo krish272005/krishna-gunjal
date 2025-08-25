@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home — Krishna Gunjal</title>
+  <title>Contact — Krishna Gunjal</title>
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
@@ -25,44 +25,34 @@
       </div>
       <nav class="main-nav">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="skills.html">Skills</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
       <button id="theme-toggle" aria-pressed="false">dark mode</button>
     </div>
   </header>
 
-<main class="home-hero container">
-  <div class="hero-text">
-    <h1>Hi, I'm Krishna 👋</h1>
-    <p>A passionate <span class="highlight">Web Developer</span> and aspiring 
-       <span class="highlight">Cybersecurity Expert</span>.</p>
-    <p>I love building clean, responsive websites and exploring AI & security projects.</p>
-    
-    <div class="hero-buttons">
-      <a href="projects.html" class="btn">View My Projects</a>
-      <a href="contact.html" class="btn secondary">Get in Touch</a>
-    </div>
-  </div>
+  <main class="container">
+    <section class="contact-section">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <label for="fullname">Full Name *</label>
+        <input type="text" id="fullname" name="fullname" required>
 
-  <div class="hero-image">
-    <img src="images/myphoto.jpg" alt="Profile photo of Krishna">
-  </div>
-</main>
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
 
-<!-- Optional social links -->
-<section class="socials container">
-  <h2>Connect with me</h2>
-  <div class="social-links">
-    <a href="https://github.com/krish272005" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/krishna-gunjal-5a3675369/" target="_blank">LinkedIn</a>
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" required></textarea>
 
-  </div>
-</section>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <p>&copy; 2025 Krishna Gunjal. All rights reserved.</p>
